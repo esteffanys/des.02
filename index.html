@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>atividade 01</title>
+</head>
+<body>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Ifrn Parnamirin</ion-title>
+      </ion-toolbar>
+
+      
+    </ion-header>
+    <ion-content class="outer-content">
+      <ion-item>
+        <ion-toggle id="bt"  color="primary" onclick="esconder()"></ion-toggle>
+      </ion-item>
+
+  
+      <ion-list id="esc">
+        <ion-list-header> <img src="https://th.bing.com/th/id/OIP.0MQzFzdWr3pN3kwAd8Ly0QHaE8?w=249&h=180&c=7&r=0&o=5&pid=1.7"></ion-list-header>
+        <ion-item >Endereço: R. Antônia de Lima Paiva, 155 - Nova Esperança, Parnamirim - RN, 59143-455
+        <br>
+        <br>
+          Suas atividades tiveram início no segundo semestre de 2008, com a implantação de um núcleo de ensino na Escola Municipal Augusto Severo, situada na Rua Sargento ...
+        <br>
+        O Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN), criado nos termos da Lei nº 11.892, de 29 de dezembro de 2008, vinculada ao Ministério da Educação (MEC), é uma instituição de educação básica, profissional, superior, pluricurricular e multicampi, especializada na oferta de educação profissional e tecnológica em diferentes níveis e modalidades de ensino, com base na conjugação de conhecimentos técnicos e tecnológicos com sua prática pedagógica.
+
+O IFRN é composto por uma Reitoria e 22 campi distribuídos por todas as regiões do Estado, sendo eles: Apodi, Caicó, Canguaretama, Ceará-Mirim, Currais Novos, Ipanguaçu, João Câmara, Jucurutu, Lajes, Macau, Mossoró, Natal - Central, Natal - Cidade Alta, Natal - Zona Leste, Natal - Zona Norte, Nova Cruz, Parelhas, Parnamirim, Pau dos Ferros, Santa Cruz, São Gonçalo do Amarante e São Paulo do Potengi.
+        </ion-item>
+
+      </ion-list>
+     
+    </ion-content> 
+    <ion-footer>
+        <ion-toolbar color="medium">
+          <ion-title>TSI--5::IF-PAR</ion-title>
+        </ion-toolbar>
+      </ion-footer>
+  </ion-app>
+
+  <script src="https://unpkg.com/@ionic/core@0.1.4-8/dist/ionic.js"></script>
+  <script>
+
+    function esconder() {
+      const toggle = document.getElementById('bt');
+      var esc = document.getElementById("esc");
+      console.log(toggle.checked);
+      if (toggle.checked) {
+         esc.style.display = "none";
+    } else {
+      esc.style.display = "block";
+  }
+}
+  </script>
+</body>
+</html>
